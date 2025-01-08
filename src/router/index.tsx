@@ -74,6 +74,7 @@ const router = createBrowserRouter(
   {
     future: {
       v7_relativeSplatPath: true,
+      v7_startTransition: true,
       v7_skipActionErrorRevalidation: true, // 新添加的标志
       v7_normalizeFormMethod: true, // 添加这个配置
       v7_partialHydration: true, // 添加这个配置
@@ -83,3 +84,8 @@ const router = createBrowserRouter(
 )
 
 export default router
+
+export const LOGIN_PATHNAME = '/login'
+export const REGISTER_PATHNAME = '/register'
+export const HOME_PATHNAME = '/'
+export const MANAGE_INDEX_PATHNAME = '/manage/list'
